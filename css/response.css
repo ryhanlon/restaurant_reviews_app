@@ -1,0 +1,41 @@
+/*----- Range of iPad (768 x 1024) -----*/
+@media screen and (min-width: 767px) {
+    nav h1 a{
+        font-size: 2.7vh;
+    }
+
+    #restaurants-list li {
+        max-width: 35vw;
+    }
+
+    #restaurants-list .restaurant-img {
+        max-width: 35vw;
+
+    }
+}
+
+
+/*----- Range of iPadPro (1024 x 1366) -----*/
+@media screen and (min-width: 1023px) {
+
+
+}
+
+/*----- Range for desktop -----*/
+@media screen and (min-width: 1050px) {
+    #map {
+        height: 45vh;
+    }
+
+
+    #restaurants-list li {
+        max-width: 24vw;
+    }
+
+    #restaurants-list .restaurant-img {
+        max-width: 24vw;
+
+    }
+
+
+}

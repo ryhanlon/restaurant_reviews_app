@@ -90,7 +90,19 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img';
-  image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  const imgData = DBHelper.imageUrlForRestaurant(restaurant);
+  const imgParts = imgData.split('.');
+  const img1x = `${imgParts[0]}-1x.jpg`;
+  const img2x = `${imgParts[0]}-2x.jpg`;
+  const img3x = `${imgParts[0]}-3x.jpg`;
+  console.log('here' + img2x);
+
+
+  image.src = img1x;
+  image.srcset = `${img1x} 300w, ${img2x} 600w, ${img3x} 1000w`;
+  image.alt = `${restaurant.name} restaurant promotional image`;
+
+
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;

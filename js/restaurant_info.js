@@ -84,20 +84,16 @@ fetchRestaurantFromURL = (callback) => {
 fillRestaurantHTML = (restaurant = self.restaurant) => {
   const name = document.getElementById('restaurant-name');
   name.innerHTML = restaurant.name;
-
   const address = document.getElementById('restaurant-address');
+
   address.innerHTML = restaurant.address;
 
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img';
-  const imgData = DBHelper.imageUrlForRestaurant(restaurant);
-  const imgParts = imgData.split('.');
-  const img1x = `${imgParts[0]}-1x.jpg`;
-  const img2x = `${imgParts[0]}-2x.jpg`;
-  const img3x = `${imgParts[0]}-3x.jpg`;
-  console.log('here' + img2x);
-
-
+  const imgData = DBHelper.imageUrlForRestaurant(restaurant.photograph);
+  const img1x = `img/${imgData[1]}`;
+  const img2x = `img/${imgData[2]}`;
+  const img3x = `img/${imgData[3]}`;
   image.src = img1x;
   image.srcset = `${img1x} 300w, ${img2x} 600w, ${img3x} 1000w`;
   image.alt = `${restaurant.name} restaurant promotional image`;

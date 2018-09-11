@@ -159,17 +159,15 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
-
   const image = document.createElement('img');
+
   image.className = 'restaurant-img';
-  const imgData = DBHelper.imageUrlForRestaurant(restaurant);
-  const imgParts = imgData.split('.');
-  const img1x = `${imgParts[0]}-1x.jpg`;
-  const img2x = `${imgParts[0]}-2x.jpg`;
-  const img3x = `${imgParts[0]}-3x.jpg`;
-  console.log('here' + img2x);
+  const imgData = DBHelper.imageUrlForRestaurant(restaurant.photograph);
+  // console.log('data ' + imgData);
 
-
+  const img1x = `img/${imgData[1]}`;
+  const img2x = `img/${imgData[2]}`;
+  const img3x = `img/${imgData[3]}`;
   image.src = img1x;
   image.srcset = `${img1x} 300w, ${img2x} 600w, ${img3x} 1000w`;
   image.alt = `${restaurant.name} restaurant promotional image`;

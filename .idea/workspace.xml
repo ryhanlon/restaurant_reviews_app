@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba5d79d-37ab-45ed-8cfc-ee73fcf50bed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/1-1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/1-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/1-3x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/10-1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/10-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/10-3x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/2-1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/2-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/2-3x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/3-1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/3-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/3-3x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/4-1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/4-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/4-3x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/5-1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/5-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/5-3x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6-1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6-3x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/7-1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/7-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/7-3x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/8-1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/8-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/8-3x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/9-1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/9-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/9-3x.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/restaurants.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/restaurants.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/restaurant_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/restaurant_info.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,12 +82,12 @@
     <session id="-1907802276">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="6" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="7" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,50 +95,52 @@
           <entry key="CODEOWNERS" value="1" />
           <entry key="css" value="7" />
           <entry key="html" value="7" />
-          <entry key="jpg" value="23" />
-          <entry key="js" value="14" />
-          <entry key="json" value="6" />
-          <entry key="md" value="11" />
+          <entry key="jpg" value="48" />
+          <entry key="js" value="16" />
+          <entry key="json" value="7" />
+          <entry key="md" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
           <entry key="HTML" value="7" />
-          <entry key="Image" value="23" />
-          <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="14" />
-          <entry key="Markdown" value="11" />
+          <entry key="Image" value="48" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="16" />
+          <entry key="Markdown" value="12" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2564" />
+          <entry key="css" value="2590" />
           <entry key="html" value="952" />
-          <entry key="js" value="137" />
-          <entry key="txt" value="841" />
+          <entry key="js" value="278" />
+          <entry key="json" value="56" />
+          <entry key="txt" value="1087" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2564" />
+          <entry key="CSS" value="2590" />
           <entry key="HTML" value="952" />
-          <entry key="JavaScript" value="137" />
-          <entry key="PLAIN_TEXT" value="841" />
+          <entry key="JSON" value="56" />
+          <entry key="JavaScript" value="278" />
+          <entry key="PLAIN_TEXT" value="1087" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47126436">
+    <splitter split-orientation="horizontal" split-proportion="0.3223301">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="431" column="13" selection-start-line="431" selection-start-column="13" selection-end-line="431" selection-end-column="13" />
+                <state relative-caret-position="237">
+                  <caret line="338" column="15" selection-start-line="338" selection-start-column="12" selection-end-line="338" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -115,8 +148,29 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="351">
-                  <caret line="63" column="86" selection-start-line="63" selection-start-column="79" selection-end-line="63" selection-end-column="86" />
+                <state relative-caret-position="615">
+                  <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="252">
+                  <caret line="164" column="55" selection-start-line="164" selection-start-column="55" selection-end-line="164" selection-end-column="55" />
+                  <folding>
+                    <element signature="e#9#15#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/dbhelper.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="282">
+                  <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -124,8 +178,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/restaurant_info.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+                <state relative-caret-position="534">
+                  <caret line="97" column="25" lean-forward="true" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
                   <folding>
                     <element signature="e#9#15#0" expanded="true" />
                   </folding>
@@ -140,17 +194,26 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/response.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
+                <state>
                   <caret line="12" selection-start-line="12" selection-end-line="12" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/restaurant.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-401">
-                  <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="45" />
+                <state relative-caret-position="15">
+                  <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="45" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/data/restaurants.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -174,10 +237,10 @@
       <find>width</find>
       <find>inside</find>
       <find>footer</find>
-      <find>img</find>
       <find>review</find>
       <find>restaurant-con</find>
       <find>reviews</find>
+      <find>img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,14 +249,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/restaurant_info.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/js/dbhelper.js" />
         <option value="$PROJECT_DIR$/css/response.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/restaurant.html" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/js/dbhelper.js" />
+        <option value="$PROJECT_DIR$/js/restaurant_info.js" />
+        <option value="$PROJECT_DIR$/data/restaurants.json" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -215,7 +279,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,6 +294,11 @@
             <path>
               <item name="restaurant_reviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="restaurant_reviews" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restaurant_reviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restaurant_reviews" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,6 +310,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536216529945</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="style: fix heading, footer and img--overflowing container, &#10;&#10;Styling for review page, reworking flex and grid for review page.">
+      <created>1536474150082</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536474150082</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -351,7 +427,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.114857145" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.117142856" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -411,7 +487,8 @@
     <MESSAGE value="feat: Layout&#10;&#10;Remove CSS Grid and changed to Flexbox. Add meta tags, add tags for css, js, etc to the html page.  Made response.css and started media queries.  Adjust colors for site.  Convert px/%/rem/em to vw, vh for fonts, padding, margins, height and width etc. Start cleaning up html and css files." />
     <MESSAGE value="feat: Clean up semantic tags, spacing and labeling" />
     <MESSAGE value="feat: Start CSS Grid for Reviews page&#10;&#10;Add the CSS grid for the main body, refactor the html and css from old code, change colors, add class to differentiate between home page and review page." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Start CSS Grid for Reviews page&#10;&#10;Add the CSS grid for the main body, refactor the html and css from old code, change colors, add class to differentiate between home page and review page." />
+    <MESSAGE value="style: fix heading, footer and img--overflowing container, &#10;&#10;Styling for review page, reworking flex and grid for review page." />
+    <option name="LAST_COMMIT_MESSAGE" value="style: fix heading, footer and img--overflowing container, &#10;&#10;Styling for review page, reworking flex and grid for review page." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CODEOWNERS">
@@ -432,13 +509,6 @@
     <entry file="file://$PROJECT_DIR$/css/normalize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/dbhelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="152" column="39" selection-start-line="152" selection-start-column="39" selection-end-line="152" selection-end-column="39" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img/8.jpg">
@@ -465,25 +535,52 @@
     <entry file="file://$PROJECT_DIR$/img/3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/restaurants.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="31" column="60" lean-forward="true" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/response.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state>
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-img/13x.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-img/12x.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-img/11x.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-img/10-1x.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-img/1-2x.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-img/10-2x.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-img/1-3x.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-img/10-3x.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-img/1-1x.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/1.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
@@ -495,41 +592,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+        <state relative-caret-position="237">
+          <caret line="338" column="15" selection-start-line="338" selection-start-column="12" selection-end-line="338" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/restaurant_info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="534">
+          <caret line="97" column="25" lean-forward="true" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
           <folding>
             <element signature="e#9#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restaurant.html">
+    <entry file="file://$PROJECT_DIR$/data/restaurants.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-401">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/dbhelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="63" column="86" selection-start-line="63" selection-start-column="79" selection-end-line="63" selection-end-column="86" />
+        <state relative-caret-position="282">
+          <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="431" column="13" selection-start-line="431" selection-start-column="13" selection-end-line="431" selection-end-column="13" />
+        <state relative-caret-position="252">
+          <caret line="164" column="55" selection-start-line="164" selection-start-column="55" selection-end-line="164" selection-end-column="55" />
+          <folding>
+            <element signature="e#9#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

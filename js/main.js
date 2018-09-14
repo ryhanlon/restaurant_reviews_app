@@ -165,6 +165,7 @@ createRestaurantHTML = (restaurant) => {
   const imgData = DBHelper.imageUrlForRestaurant(restaurant.photograph);
   // console.log('data ' + imgData);
 
+    // Add responsive images
   const img1x = `img/${imgData[1]}`;
   const img2x = `img/${imgData[2]}`;
   const img3x = `img/${imgData[3]}`;
@@ -172,7 +173,6 @@ createRestaurantHTML = (restaurant) => {
   image.srcset = `${img1x} 300w, ${img2x} 600w, ${img3x} 1000w`;
   image.alt = `${restaurant.name} restaurant promotional image`;
   li.append(image);
-
 
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;

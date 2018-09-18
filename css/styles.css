@@ -93,9 +93,10 @@ nav h1 a {
 /* ============= Breadcrumb on the reviews page,  restaurant.html =============== */
 
 #breadcrumb {
-    padding: 1.5vh 1vh;
+    padding: 1.5vh 1vh 1.5vh 2vh;
     list-style: none;
-    background-color: rgba(232, 230, 230, .7);
+    /*background-color: rgba(232, 230, 230, .7);*/
+    background-color: rgb(182, 127, 128);
     font-size: 2.5vh;
     margin: 0;
     /*width: calc(50% - 80px);*/
@@ -224,7 +225,7 @@ nav h1 a {
     margin: 15px;
     max-width: 100vw;
     /*min-height: 380px;*/
-    padding: 0 30px 25px;
+    padding: 0 0 25px;
     text-align: center;
     /*width: 270px;*/
 }
@@ -299,11 +300,12 @@ nav h1 a {
  /* add grid here*/
     display: grid;
     grid-template: 10% 40% 10% 10% 30% / repeat(5, 1fr);
-    grid-template-areas: "restaurant-name restaurant-name restaurant-name restaurant-name restaurant-name"
-                         "restaurant-img restaurant-img restaurant-img restaurant-img restaurant-img"
-                         "restaurant-cuisine restaurant-cuisine restaurant-cuisine restaurant-cuisine restaurant-cuisine"
-                         "restaurant-address restaurant-address restaurant-address restaurant-address restaurant-address"
-                         "restaurant-hours restaurant-hours restaurant-hours restaurant-hours restaurant-hours";
+    grid-template-areas:
+            "rest-name rest-name rest-name rest-name rest-name"
+            "rest-img rest-img rest-img rest-img rest-img"
+            "rest-cuisine rest-cuisine rest-cuisine rest-cuisine rest-cuisine"
+            "rest-address rest-address rest-address rest-address rest-address"
+            "rest-hours rest-hours rest-hours rest-hours rest-hours";
     justify-content: center;
     align-items: center;
     background-color: #333;
@@ -338,9 +340,9 @@ nav h1 a {
 
 #restaurant-name {
     /*color: #f18200;*/
-    grid-area: restaurant-name;
+    grid-area: rest-name;
     justify-self: center;
-    color: rgb(245, 216, 182);
+    color: #fff;
     font-family: Arial,sans-serif;
     font-size: 4vh;
     font-weight: 200;
@@ -350,13 +352,13 @@ nav h1 a {
     line-height: 1.1;
 }
 #restaurant-img {
-    grid-area: restaurant-img;
+    grid-area: rest-img;
     justify-self: center;
 	width: 100vw;
 }
 
 #restaurant-address {
-    grid-area: restaurant-address;
+    grid-area: rest-address;
     justify-self: center;
     font-size: 4.5vw;
     margin: 0 0 2vh;
@@ -365,18 +367,19 @@ nav h1 a {
 }
 
 #restaurant-cuisine {
-    grid-area: restaurant-cuisine;
+    grid-area: rest-cuisine;
     justify-self: center;
     background-color: #333;
     color: #ddd;
-    font-size: 2.5vh;
+    font-size: 3vh;
     font-weight: 300;
     letter-spacing: 10px;
-    margin: -2px 0 3vh;
-    padding: 2vh 0 0;
+    margin: 0 0 2vh;
+    padding: 2vh 0 2vh;
     text-align: center;
     text-transform: uppercase;
     width: 100vw;
+    border-bottom: 2px solid #545252;
 }
 
 #restaurant-container, #reviews-container {
@@ -388,7 +391,7 @@ nav h1 a {
 }
 
 #reviews-container {
-    background-color: rgba(119, 13, 13, 0.52);
+    /*background-color: rgba(119, 13, 13, 0.52);*/
     /*padding: 2vh 4vh;*/
 }
 
@@ -428,11 +431,15 @@ nav h1 a {
 }
 
 #restaurant-hours {
-    grid-area: restaurant-hours;
+    grid-area: rest-hours;
     justify-self: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0 4vw 1vh;
-    background-color: rgb(182, 127, 128);
-    width: 100%;
+    /*background-color: rgb(182, 127, 128);*/
+    background-color: #333;
+    /*width: 100%;*/
     text-align: center;
 }
 

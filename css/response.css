@@ -4,6 +4,20 @@
         font-size: 2.7vh;
     }
 
+    /*#breadcrumb {*/
+        /*padding-left: ;*/
+    /*}*/
+
+    #restaurant-info-container {
+        display: grid;
+        grid-template: 10% 40% 10% 10% / repeat(6, 1fr);
+        grid-template-areas:
+                "rest-name rest-name rest-name rest-name rest-name rest-name"
+                "rest-img rest-img rest-img rest-img rest-hours rest-hours"
+                "rest-cuisine rest-cuisine rest-cuisine rest-cuisine rest-cuisine rest-cuisine"
+                "rest-address rest-address rest-address rest-address rest-address rest-address";
+    }
+
     #restaurants-list li {
         max-width: 35vw;
     }
@@ -11,6 +25,35 @@
     #restaurants-list .restaurant-img {
         max-width: 35vw;
 
+    }
+
+    #restaurant-hours {
+        padding: 2.5vh 1vw 1vw;
+        background-color: #333;
+        width: 90%;
+        height: 101%;
+    }
+
+    td {
+        font-size: 1vh;
+        padding: 0 2vh;
+    }
+
+    #restaurant-name {
+        margin: 16vh 0 1.5vh;
+        font-size: 2rem;
+    }
+
+    #restaurant-address {
+        font-size: 2rem;
+    }
+
+    #restaurant-cuisine {
+        margin: 0 0 1vh;
+    }
+
+    #reviews-list li {
+        margin: 0 0 3vh 3vh;
     }
 }
 
@@ -27,6 +70,9 @@
         height: 45vh;
     }
 
+    td {
+        font-size: 1.7vh;
+    }
 
     #restaurants-list li {
         max-width: 24vw;
@@ -35,6 +81,14 @@
     #restaurants-list .restaurant-img {
         max-width: 24vw;
 
+    }
+
+    #restaurant-address {
+        font-size: 2.2rem;
+    }
+
+    #restaurant-cuisine {
+        font-size: 2.2rem;
     }
 
 

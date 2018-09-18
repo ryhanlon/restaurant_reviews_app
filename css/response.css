@@ -4,6 +4,21 @@
         font-size: 2.7vh;
     }
 
+    #nav-header {
+        flex-direction: row;
+    }
+
+    .title {
+        border-bottom: none;
+        font-size: 2.2rem;
+        padding: 1rem;
+        padding-bottom: none;
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+
     /*#breadcrumb {*/
         /*padding-left: ;*/
     /*}*/
@@ -20,6 +35,10 @@
 
     #restaurants-list li {
         max-width: 35vw;
+    }
+
+    #restaurants-list li h1{
+    font-size: 1.7rem;
     }
 
     #restaurants-list .restaurant-img {
@@ -53,19 +72,29 @@
     }
 
     #reviews-list li {
-        margin: 0 0 3vh 3vh;
+        margin: 0 3vh 5vh 0;
     }
 }
 
 
 /*----- Range of iPadPro (1024 x 1366) -----*/
 @media screen and (min-width: 1023px) {
-
+    li {
+        font-size: 1.5rem;
+    }
 
 }
 
 /*----- Range for desktop -----*/
 @media screen and (min-width: 1050px) {
+    /*#nav-header {*/
+    /*flex-direction: row;*/
+    /*}*/
+
+    /*.nav-content {*/
+        /*font-size: 1rem;*/
+    /*}*/
+
     #map {
         height: 45vh;
     }
@@ -91,5 +120,14 @@
         font-size: 2.2rem;
     }
 
+    #reviews-list li  {
+        width: 45%;
+        margin: 0 5vh 5vh 0;
+
+    }
+
+    #reviews-list li p {
+    font-size: 1.7vw;
+}
 
 }

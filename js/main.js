@@ -5,6 +5,26 @@ var newMap;
 var markers = [];
 const mapBoxToken = 'pk.eyJ1IjoicnloYW5sb24iLCJhIjoiY2o3NXFmOTEwMWRhdjJ3cGE2MXc0ZHBpbiJ9.uWoOppPEk4NZZk0RrXsIFQ';
 
+
+/**
+ * Entry point to service worker
+ */
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function(reg) {
+    // if(reg.installing) {
+    //   console.log('Service worker installing');
+    // } else if(reg.waiting) {
+    //   console.log('Service worker installed');
+    // } else if(reg.active) {
+    //   console.log('Service worker active');
+    // }
+  }).catch(function(error) {
+    //registration failed
+      console.log('Registration failed with ' + error);
+  });
+}
+
+
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */

@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fba5d79d-37ab-45ed-8cfc-ee73fcf50bed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sw-ctrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,14 +54,15 @@
     <session id="-1907802276">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="6" />
-          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.5" value="7" />
           <entry key="project.open.time.6" value="7" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -70,7 +72,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="10" />
           <entry key="jpg" value="48" />
-          <entry key="js" value="25" />
+          <entry key="js" value="28" />
           <entry key="json" value="7" />
           <entry key="md" value="17" />
           <entry key="png" value="3" />
@@ -82,7 +84,7 @@
           <entry key="HTML" value="10" />
           <entry key="Image" value="51" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="25" />
+          <entry key="JavaScript" value="28" />
           <entry key="Markdown" value="17" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
@@ -90,19 +92,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="4481" />
-          <entry key="html" value="1474" />
-          <entry key="js" value="3283" />
+          <entry key="html" value="1511" />
+          <entry key="js" value="3522" />
           <entry key="json" value="86" />
-          <entry key="txt" value="1683" />
+          <entry key="txt" value="1713" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="4481" />
-          <entry key="HTML" value="1474" />
+          <entry key="HTML" value="1511" />
           <entry key="JSON" value="86" />
-          <entry key="JavaScript" value="3283" />
-          <entry key="PLAIN_TEXT" value="1683" />
+          <entry key="JavaScript" value="3522" />
+          <entry key="PLAIN_TEXT" value="1713" />
         </counts>
       </usages-collector>
     </session>
@@ -115,22 +117,22 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/main.js">
+            <entry file="file://$PROJECT_DIR$/js/sw-ctrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="690">
-                  <caret line="44" column="41" lean-forward="true" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
-                  <folding>
-                    <element signature="e#9#15#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="285">
+                  <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sw.js">
+            <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+                <state relative-caret-position="105">
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                  <folding>
+                    <element signature="e#9#15#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -138,11 +140,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/restaurant_info.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1305">
+                <state relative-caret-position="1245">
                   <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#9#15#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -152,10 +151,19 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sw.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="780">
+                  <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/restaurant.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+                <state relative-caret-position="559">
+                  <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
                 </state>
               </provider>
             </entry>
@@ -163,8 +171,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="12" column="38" selection-start-line="12" selection-end-line="13" />
+                <state relative-caret-position="589">
+                  <caret line="78" column="61" lean-forward="true" selection-start-line="78" selection-end-line="79" />
                 </state>
               </provider>
             </entry>
@@ -211,11 +219,12 @@
         <option value="$PROJECT_DIR$/js/restaurant_info.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/css/response.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/restaurant.html" />
         <option value="$PROJECT_DIR$/js/service-worker.js" />
         <option value="$PROJECT_DIR$/js/sw.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/sw-ctrl.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/restaurant.html" />
         <option value="$PROJECT_DIR$/sw.js" />
       </list>
     </option>
@@ -227,10 +236,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-232" />
-    <option name="y" value="-1042" />
-    <option name="width" value="1794" />
-    <option name="height" value="986" />
+    <option name="x" value="-223" />
+    <option name="y" value="-1043" />
+    <option name="width" value="1875" />
+    <option name="height" value="923" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -445,14 +454,22 @@
       <option name="project" value="LOCAL" />
       <updated>1537299719051</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: registering serviceWorker">
+      <created>1537665265478</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1537665265478</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-232" y="-1042" width="1794" height="986" extended-state="0" />
+    <frame x="-223" y="-1043" width="1875" height="923" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5017241" side_tool="true" weight="0.1294669" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49827588" visible="true" weight="0.21575342" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49827588" visible="true" weight="0.21167485" />
       <window_info id="Structure" order="2" sideWeight="0.5017241" side_tool="true" weight="0.1294669" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -547,7 +564,8 @@
     <MESSAGE value="feat: Responsive design for mobile, tablet, desktop" />
     <MESSAGE value="feat: Responsive styling for tablets" />
     <MESSAGE value="feat: Add section nav-anchors, media queries, styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add section nav-anchors, media queries, styling" />
+    <MESSAGE value="feat: registering serviceWorker" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: registering serviceWorker" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CODEOWNERS">
@@ -611,9 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3825">
           <caret line="255" selection-start-line="255" selection-end-line="255" />
-          <folding>
-            <marker date="1537299410000" expanded="true" signature="1268:1289" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,13 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" column="38" selection-start-line="12" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -653,9 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sw.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/notes_project/rubric-p2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -669,37 +674,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restaurant.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/restaurant_info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
+        <state relative-caret-position="1245">
           <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
-          <folding>
-            <element signature="e#9#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="44" column="41" lean-forward="true" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#9#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="78" column="61" lean-forward="true" selection-start-line="78" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sw-ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

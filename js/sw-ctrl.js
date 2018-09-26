@@ -4,6 +4,7 @@
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js')
 	.then(function(reg) {
+		console.log('Im here.');
 		if(reg.installing) {
 		  console.log('Service worker installing');
 		} else if(reg.waiting) {

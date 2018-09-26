@@ -1,53 +1,65 @@
-const staticCacheName = 'restReviews-static-v2'
+const staticCacheName = 'restReviews-static-v2';
+const cacheFiles = [
+	'/',
+	'/index.html',
+	'/restaurant.html',
+	'/js/main.js',
+	'/js/restaurant_info.js',
+	'/js/dbhelper.js',
+	'/css/styles.css',
+	'/css/response.css',
+	'/data/restaurants.json',
+	'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
+	'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
+	'/img/'
+];
 
 
 self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.open(staticCacheName).then(function(cache) {
-			return cache.addAll([
-				'/',
-				'index.html',
-				'js/main.js',
-				'js/restaurant_info.js',
-				'css/styles.css',
-				'css/responsive.css',
-				'img/'
-			]);
+			return cache.addAll(cacheFiles);
 		})
 	);
 });
 
-// self.addEventListener('install', function(event) {
-//   event.waitUntil(
-//     caches.open('v1').then(function(cache) {
-//       return cache.addAll(
-//         [
-// 		'/',
-// 		'/js/main.js',
-// 		'/js/restaurant_info.js',
-// 		'/css/styles.css',
-// 		'/css/responsive.css',
-// 		'/img/1.jpg'
-//         ]
-//       );
-//     })
-//   );
-// });
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+    	return response || fetch(event.request);
+	})
+  );
+});
 
+// all urls will be added to cache
+function cacheAssets( assets ) {
+  return new Promise( function (resolve, reject) {
+    // open cache
+    caches.open('assets')
+      .then(cache => {
+        // the API does all the magic for us
+        cache.addAll(assets)
+          .then(() => {
+            console.log('all assets added to cache')
+            resolve()
+          })
+          .catch(err => {
+            console.log('error when syncing assets', err)
+            reject()
+          })
+      }).catch(err => {
+        console.log('error when opening cache', err)
+        reject()
+      })
+  });
+}
+var assets = []; // list of urls to be cached
 
-// self.addEventListener('activate', function (event) {
-// 	event.waitUntil(
-// 		caches.keys().then(function (keyList) {
-// 			return Promise.all(keyList.map(function (key) {
-// 				if (cacheWhitelist.indexOf(key) === -1) {
-// 					return caches.delete(key);
-// 				}
-// 			}));
-// 		})
-// 	);
-//
-// });
-
+// cache responses of provided urls
+cacheAssets(assets)
+  .then(() => {
+      console.log('All assets cached')
+  });
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
@@ -78,26 +90,4 @@ self.addEventListener('fetch', function(event) {
 	);
 });
 
-// self.addEventListener('fetch', function(event) {
-//   event.respondWith(caches.match(event.request).then(function(response) {
-//     // caches.match() always resolves
-//     // but in case of success response will have value
-//     if (response !== undefined) {
-//       return response;
-//     } else {
-//       return fetch(event.request).then(function (response) {
-//         // response may be used only once
-//         // we need to save clone to put one copy in cache
-//         // and serve second one
-//         let responseClone = response.clone();
-//
-//         caches.open('v1').then(function (cache) {
-//           cache.put(event.request, responseClone);
-//         });
-//         return response;
-//       }).catch(function () {
-//         return caches.match('/sw-test/gallery/myLittleVader.jpg');
-//       });
-//     }
-//   }));
-// });
+

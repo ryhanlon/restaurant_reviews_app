@@ -41,7 +41,7 @@ a img{
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 0 2vw;
+    margin: 1rem 0;
     text-align: center;
 }
 
@@ -265,19 +265,25 @@ nav h1 a {
     text-transform: uppercase;
 }
 
-#restaurants-list p {
-  margin: 0;
-  font-size: 1.3rem;
+#restaurants-list h2 {
+    padding: 0 1rem;
 }
 
-#restaurants-list li a {
+#restaurants-list p,
+address {
+    margin: 0 2rem;
+    font-size: 1.3rem;
+    font-style: normal;
+}
+
+#restaurants-list li button {
     background-color: orange;
     border-bottom: 3px solid #eee;
     color: #fff;
     display: inline-block;
     font-size: 1rem;
     margin: 15px 0 0;
-    padding: 8px 30px 10px;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;

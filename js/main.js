@@ -175,21 +175,29 @@ createRestaurantHTML = (restaurant) => {
   image.alt = `${restaurant.name} restaurant promotional image`;
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
+  const att = document.createAttribute("aria-label");
+  att.value = `selected restaurant is ${restaurant.name}`;
   name.innerHTML = restaurant.name;
   li.append(name);
+  li.setAttributeNode(att);
 
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
   li.append(neighborhood);
 
-  const address = document.createElement('p');
+  const address = document.createElement('address');
   address.innerHTML = restaurant.address;
   li.append(address);
 
-  const more = document.createElement('a');
+  const more = document.createElement('button');
   more.innerHTML = 'View Details';
-  more.href = DBHelper.urlForRestaurant(restaurant);
+  // more.href = DBHelper.urlForRestaurant(restaurant);
+    more.onclick = () => {
+      const url = DBHelper.urlForRestaurant(restaurant);
+      window.location = url;
+	};
+
   li.append(more);
 
   return li

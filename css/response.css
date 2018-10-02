@@ -11,8 +11,7 @@
     .title {
         border-bottom: none;
         font-size: 2.2rem;
-        padding: 1rem;
-        padding-bottom: none;
+        padding: .5rem;
     }
 
     li {
@@ -37,8 +36,8 @@
         max-width: 35vw;
     }
 
-    #restaurants-list li h1{
-    font-size: 1.7rem;
+    #restaurants-list li h2{
+        font-size: 1.7rem;
     }
 
     #restaurants-list .restaurant-img {
@@ -46,33 +45,40 @@
 
     }
 
+    /*===== restaurant.html =====*/
     #restaurant-hours {
-        padding: 2.5vh 1vw 1vw;
+        /*padding: 2.5vh 1vw 1vw;*/
+        padding: 0;
         background-color: #333;
         width: 90%;
         height: 101%;
     }
 
     td {
-        font-size: 1vh;
-        padding: 0 2vh;
+        padding: 0 1rem;
     }
 
     #restaurant-name {
-        margin: 16vh 0 1.5vh;
+        margin: 8.5rem 0 1.5rem;
         font-size: 2rem;
     }
 
-    #restaurant-address {
-        font-size: 2rem;
-    }
 
     #restaurant-cuisine {
         margin: 0 0 1vh;
+        font-size: 1.7rem;
+    }
+
+    #restaurant-address {
+        font-size: 1.5rem;
+    }
+
+    #reviews-container h3 {
+        font-size: 2rem;
     }
 
     #reviews-list li {
-        margin: 0 3vh 5vh 0;
+        margin: 1rem;
     }
 }
 
@@ -99,35 +105,47 @@
         height: 45vh;
     }
 
-    td {
-        font-size: 1.7vh;
-    }
-
     #restaurants-list li {
         max-width: 24vw;
     }
 
     #restaurants-list .restaurant-img {
         max-width: 24vw;
+    }
 
+    #restaurants-list p,
+    address {
+        font-size: 1.3rem;
+    }
+
+    #restaurants-list h2 {
+        padding: 0;
+        font-size: 1.7rem;
+    }
+
+    #reviews-list li p {
+        font-size: 1.7vw;
+    }
+
+    #restaurant-name {
+        font-size: 3rem;
     }
 
     #restaurant-address {
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
 
     #restaurant-cuisine {
         font-size: 2.2rem;
     }
 
+    td {
+        font-size: 1.7vh;
+    }
+
     #reviews-list li  {
         width: 45%;
         margin: 0 5vh 5vh 0;
-
     }
-
-    #reviews-list li p {
-    font-size: 1.7vw;
-}
 
 }

@@ -43,12 +43,22 @@ This video helped me get familiar with the different files and develop an overal
 - Tutorial Request: FEND Project 5 - Service Workers [video](https://www.youtube.com/watch?v=2PY733qFR3A&feature=youtu.be).
 This video gave a nice review of Service Worker without a lot of additional files.
 
+- *Intro to Service Worker & Caching*,  by Pete LePage at Web Fundamentals [article](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images).
+This video was very clear and simple for a simple app.  It demonstrated .clone() which catches the response for caching.
+
+- *Service Worker demo*, at MDN web docs [tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#Service_workers_demo).
+This had useful code samples.  Also showed the .clone() snippet for caching the response.
+Explored the 'see also' links:  *Understanding Service Workers*, *The service Worker Cookbook*, *Service Workers 101 cheatsheet*
+
+- Lesson 13: Introducing the Service Worker, Front-End Applications in the FEND course.  Used the lesson as a foundation for SW then expanded with the .clone() function.
+
 - MDN web docs
     - [aria-label attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
     - [aria-labelledby attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute)
+    - [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 
-- *Images*,  by Pete LePage at Web Fundamentals [article](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images)
-
+- *Images*,  by Traversy Meida [video](https://www.youtube.com/watch?v=ksXwaWHCW6k&feature=youtu.be)
+Used this to review and implement ```scrset``` feature for the pictures.
 
 #### Pictures of Responsive Design of App
 ##### Phone

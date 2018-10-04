@@ -175,8 +175,9 @@ createRestaurantHTML = (restaurant) => {
   image.alt = `${restaurant.name} restaurant promotional image`;
   li.append(image);
 
+  // RH: added aria-label to give info on the link button
   const name = document.createElement('h2');
-  const att = document.createAttribute("aria-label");
+  const att = document.createAttribute('aria-label');
   att.value = `selected restaurant is ${restaurant.name}`;
   name.innerHTML = restaurant.name;
   li.append(name);

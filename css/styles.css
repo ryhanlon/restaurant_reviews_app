@@ -107,39 +107,39 @@ nav h1 a {
 
 /* ============= Breadcrumb on the reviews page,  restaurant.html =============== */
 
-#breadcrumb {
-    padding: .7rem;
-    list-style: none;
-    /*background-color: rgba(232, 230, 230, .7);*/
-    background-color: rgb(182, 127, 128);
-    font-size: 1.5rem;
-    margin: 0;
-    /*width: calc(50% - 80px);*/
-}
+/*#breadcrumb {*/
+    /*padding: .7rem;*/
+    /*list-style: none;*/
+    /*!*background-color: rgba(232, 230, 230, .7);*!*/
+    /*!*background-color: rgb(182, 127, 128);*!*/
+    /*font-size: 1.5rem;*/
+    /*margin: 0;*/
+    /*!*width: calc(50% - 80px);*!*/
+/*}*/
 
 /* Display list items side by side */
-#breadcrumb li {
-    display: inline;
-}
+/*#breadcrumb li {*/
+    /*display: inline;*/
+/*}*/
 
 /* Add a slash symbol (/) before/behind each list item */
-#breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-}
+/*#breadcrumb li+li:before {*/
+    /*padding: 8px;*/
+    /*color: black;*/
+    /*content: "/\00a0";*/
+/*}*/
 
 /* Add a color to all links inside the list */
-#breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
-}
+/*#breadcrumb li a {*/
+    /*color: #0275d8;*/
+    /*text-decoration: none;*/
+/*}*/
 
 /* Add a color on mouse-over */
-#breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-}
+/*#breadcrumb li a:hover {*/
+    /*color: #01447e;*/
+    /*text-decoration: underline;*/
+/*}*/
 
 
 /* ====================== Main Section, #maincontent ====================== */
@@ -365,7 +365,7 @@ address {
     font-size: 1.4rem;
     font-weight: 200;
     letter-spacing: 1px;
-    margin: 7.5rem 0 1rem;
+    margin: 9rem 0 1rem;
     text-transform: uppercase;
     line-height: 1.1;
 }
@@ -409,9 +409,19 @@ address {
 }
 
 #reviews-container {
-    /*background-color: rgba(119, 13, 13, 0.52);*/
-    /*padding: 2vh 4vh;*/
+    /*height: 0;*/
 }
+
+/*#review-list::before {*/
+    /*!*background-color: rgba(119, 13, 13, 0.52);*!*/
+    /*!*padding: 2vh 4vh;*!*/
+    /*display: block;*/
+  /*content: " ";*/
+  /*margin-top: -400px;*/
+  /*height: 400px;*/
+  /*visibility: hidden;*/
+  /*pointer-events: none;*/
+/*}*/
 
 #reviews-container h3 {
     /*color: #f58500;*/
@@ -420,6 +430,7 @@ address {
     font-weight: 300;
     letter-spacing: 1px;
     padding-bottom: 1pt;
+
 }
 
 #reviews-list {
@@ -428,6 +439,7 @@ address {
     justify-content: space-around;
     flex-wrap: wrap;
     /*margin: 0;*/
+
 }
 
 #reviews-list li {

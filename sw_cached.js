@@ -1,3 +1,5 @@
+// This file is not used
+
 const cacheNames = 'restReviews-static-v4';
 const cacheFiles = [
 	'/',

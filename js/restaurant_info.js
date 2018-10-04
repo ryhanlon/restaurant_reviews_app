@@ -137,8 +137,11 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
   const title = document.createElement('h3');
+  const att = document.createAttribute('id');
+  att.value = "review-list";
   title.innerHTML = 'Reviews';
   container.appendChild(title);
+  title.setAttributeNode(att);
 
   if (!reviews) {
     const noReviews = document.createElement('p');
@@ -182,11 +185,15 @@ createReviewHTML = (review) => {
  * Add restaurant name to the breadcrumb navigation menu
  */
 fillBreadcrumb = (restaurant=self.restaurant) => {
-  const breadcrumb = document.getElementById('breadcrumb');
-  const li = document.createElement('li');
-  li.innerHTML = restaurant.name;
-  breadcrumb.appendChild(li);
+  const li = document.querySelector('.restaurant-link');
+  const a = document.querySelector('.restaurant-link a');
+  const att1 = document.createAttribute('aria-label');
+
+  att1.value = `selected restaurant is ${restaurant.name}`;
+  a.innerHTML = restaurant.name;
+  li.setAttributeNode(att1);
 };
+
 
 /**
  * Get a parameter by name from page URL.

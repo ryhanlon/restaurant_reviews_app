@@ -166,7 +166,7 @@ createRestaurantHTML = (restaurant) => {
   const imgData = DBHelper.imageUrlForRestaurant(restaurant.photograph);
   // console.log('data ' + imgData);
 
-    // Add responsive images
+  // RH: Add responsive images
   const img1x = `img/${imgData[1]}`;
   const img2x = `img/${imgData[2]}`;
   const img3x = `img/${imgData[3]}`;
@@ -175,7 +175,7 @@ createRestaurantHTML = (restaurant) => {
   image.alt = `${restaurant.name} restaurant promotional image`;
   li.append(image);
 
-  // RH: added aria-label to give info on the link button
+  // RH: Added aria-label to give info on the link button
   const name = document.createElement('h2');
   const att = document.createAttribute('aria-label');
   att.value = `selected restaurant is ${restaurant.name}`;

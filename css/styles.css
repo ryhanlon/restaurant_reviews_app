@@ -26,13 +26,13 @@ ul, li {
 }
 
 a {
-	color: #67c6f1;
+	color: #fc8800;
 	text-decoration: none;
 }
 
 a:hover, a:focus {
-	color: #3397db;
-	text-decoration: none;
+	color: #0f9ff9;
+	text-decoration: underline;
 }
 
 a img{
@@ -70,7 +70,8 @@ img, embed, object, video {
     justify-content: space-between;
     flex-direction: column;
     background-color: rgb(119, 13, 13);
-    color: #f18200;
+    color: #fc8800;
+    width: 100vw;
     /*padding: .5rem;*/
 }
 
@@ -106,6 +107,8 @@ nav h1 a {
 
 
 /* ============= Breadcrumb on the reviews page,  restaurant.html =============== */
+
+
 
 /*#breadcrumb {*/
     /*padding: .7rem;*/
@@ -255,7 +258,7 @@ nav h1 a {
 }
 
 #restaurants-list li h2 {
-    color: #f18200;
+    color: #0a0a0a;
     font-family: Arial,sans-serif;
     font-size: 1.6rem;
     font-weight: 200;
@@ -274,9 +277,9 @@ address {
 }
 
 #restaurants-list li button {
-    background-color: orange;
+    background-color: darkorange;
     border-bottom: 3px solid #eee;
-    color: #fff;
+    color: #021917;
     display: inline-block;
     font-size: 1rem;
     margin: 15px 0 0;
@@ -329,13 +332,13 @@ address {
     background-color: #333;
 }
 
-.reviews-header {
-    /*grid-area: header;*/
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
+/*.reviews-header {*/
+    /*!*grid-area: header;*!*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*z-index: 1000;*/
+/*}*/
 
 /*.reviews-pg #map-container {*/
     /*background: blue none repeat scroll 0 0;*/
@@ -365,7 +368,7 @@ address {
     font-size: 1.4rem;
     font-weight: 200;
     letter-spacing: 1px;
-    margin: 9rem 0 1rem;
+    /*margin: 9rem 0 1rem;*/
     text-transform: uppercase;
     line-height: 1.1;
 }
@@ -509,4 +512,9 @@ footer {
     /*bottom: 0;*/
     /*position: absolute;*/
     /*width: 50%;*/
+}
+
+
+.leaflet-container a {
+    color: #194f65 !important;
 }

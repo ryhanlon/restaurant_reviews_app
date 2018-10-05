@@ -4,6 +4,7 @@
 #### Introduction
 
 **Title**: Restaurant Reviews
+
 by Rebecca Hanlon
 
 *Restaurant Reviews* is an app that allows the user to look up restaurants in a selected neighborhood and read the reviews for that restaurant.  The user chooses the neighborhood and the type of food.  After the selected restaurants appear, the user can select a restaurant to read its reviews.  A map is provided to see where restaurants are located.

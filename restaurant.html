@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   	<!-- Meta -->
@@ -22,41 +22,41 @@
 
 <body class="reviews-pg review-page-container" id="maincontainer">
 <!-- Navigation for site -->
-<header class="reviews-header" id="nav-header">
+<header class="reviews-header" id="nav-header" role="banner">
 	<h1 class="title">
 		<a href="/">Restaurant Reviews</a>
 	</h1>
-	<nav class="nav-content-container" role="doc-index">
+	<nav class="nav-content-container" role="navigation">
 		<ul id="nav-content">
 			<li aria-label="Home page"><a href="index.html">Home</a></li>
 			<li class="restaurant-link"><a href="#restaurant-cuisine"></a></li>
-			<li aria-label="Reviews"><a class="anchor" href="#restaurant-hours">Reviews</a></li>
+			<li aria-label="Reviews"><a class="anchor" href="#reviews-container">Reviews</a></li>
 		</ul>
 	</nav>
 	<!-- End nav -->
 </header>
 
 <!-- Beginning main -->
-<main class="reviews-maincontent" id="maincontent">
+<main class="reviews-maincontent" id="maincontent" role="main">
 
 	<!-- Beginning restaurant -->
-	<section id="restaurant-info-container">
+	<section id="restaurant-info-container" role="region" aria-label="Restaurant details">
 		<h2 id="restaurant-name"></h2>
 		<img id="restaurant-img">
 		<h3 id="restaurant-cuisine"></h3>
 		<address id="restaurant-address"></address>
-		<table id="restaurant-hours"></table>
+		<table id="restaurant-hours" aria-label="Restaurant hours"></table>
 	</section>
 	<!-- end restaurant -->
 
 	<!-- Beginning reviews -->
-	<section id="reviews-container">
+	<section id="reviews-container" role="region" aria-labelledby="reviews-list">
 		<ul id="reviews-list"></ul>
 	</section>
 	<!-- End reviews -->
 
 	<!-- Beginning map -->
-	<section id="map-container">
+	<section id="map-container" role="region" aria-labelledby="map">
 		<div id="map"></div>
 	</section>
 	<!-- End map -->

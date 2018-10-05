@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<!-- Meta -->
@@ -22,9 +22,9 @@
 
 <body id="main-container">
 <!-- navigation for site -->
-<header id="nav-header">
+<header id="nav-header" role="banner">
 	<h1 class="title">Restaurant Reviews</h1>
-	<nav class="nav-content-container" role="doc-index">
+	<nav class="nav-content-container" role="navigation">
 		 <ul class="nav-content">
 			 <li aria-label="Click to explore map"><a href="#map">Map</a></li>
 			 <li aria-label="Click to go to location selection button"><a href="#neighborhoods-select">Location</a></li>
@@ -36,33 +36,35 @@
 <!-- /nav-->
 
 <!-- Main Content -->
-<main id="maincontent">
+<main id="maincontent" role="main">
 	<!-- Map -->
- 	<section id="map-container">
-	  <div id="map"></div>
+ 	<section id="map-container" role="region" aria-labelledby="map">
+	    <div id="map"></div>
 	</section>
 	<!-- /map -->
 
-	<!-- see lesson5 13combobox -->
-	<section id="restaurant-container">
-	  <div class="filter-options">
+	<!-- Filter Options -->
+	<section id="restaurant-container" role="region">
+		<div class="filter-options">
+			<label for="neighborhoods-select">
+				<select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+					<option value="all" disabled selected>Pick Location</option>
+					<option value="all">All Neighborhoods</option>
+				</select>
+			</label>
 
-		<select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
-			<option value="all" disabled selected>Pick Location</option>
-		  	<option value="all">All Neighborhoods</option>
-		</select>
+			<label for="cuisines-select">
+				<select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+					<option value="all" disabled selected>Choose Cuisine</option>
+					<option value="all">All Cuisines</option>
+				</select>
+			</label>
+		</div>
 
-		<select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-			<option value="all" disabled selected>Choose Cuisine</option>
-		  	<option value="all">All Cuisines</option>
-		</select>
-	  </div>
-
-	  <ul id="restaurants-list"></ul>
+		<ul id="restaurants-list"></ul>
 	</section>
-
+	<!-- /filter options-->
 </main>
-
 
 <footer role="contentinfo">
 	<p class="footer-styles">Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a></p>
@@ -76,7 +78,6 @@
 	<script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
 	<script type="application/javascript" charset="utf-8" src="js/main.js"></script>
 	<script type="application/javascript" charset="utf-8" src="js/sw-ctrl.js"></script>
-
 
 	<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
 

@@ -17,6 +17,7 @@ initMap = () => {
   fetchRestaurantFromURL((error, restaurant) => {
     if (error) { // Got an error!
       console.error(error);
+
     } else {
       self.newMap = L.map('map', {
         center: [restaurant.latlng.lat, restaurant.latlng.lng],
@@ -31,7 +32,7 @@ initMap = () => {
           'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         id: 'mapbox.streets'
       }).addTo(newMap);
-      fillBreadcrumb();
+      fillNavBar();
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.newMap);
     }
   });
@@ -47,7 +48,7 @@ initMap = () => {
         center: restaurant.latlng,
         scrollwheel: false
       });
-      fillBreadcrumb();
+      fillNavBar();
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
     }
   });
@@ -88,6 +89,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   address.innerHTML = restaurant.address;
 
+  // RH: Add responsive images
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img';
   const imgData = DBHelper.imageUrlForRestaurant(restaurant.photograph);
@@ -97,8 +99,6 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   image.src = img1x;
   image.srcset = `${img1x} 300w, ${img2x} 600w, ${img3x} 1000w`;
   image.alt = `${restaurant.name} restaurant promotional image`;
-
-
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
@@ -137,6 +137,7 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
   const title = document.createElement('h3');
+  // Add ID attribute
   const att = document.createAttribute('id');
   att.value = "review-list";
   title.innerHTML = 'Reviews';
@@ -184,16 +185,16 @@ createReviewHTML = (review) => {
 /**
  * Add restaurant name to the breadcrumb navigation menu
  */
-fillBreadcrumb = (restaurant=self.restaurant) => {
+fillNavBar = (restaurant=self.restaurant) => {
   const li = document.querySelector('.restaurant-link');
   const a = document.querySelector('.restaurant-link a');
+  // RH: Add aria-label
   const att1 = document.createAttribute('aria-label');
 
-  att1.value = `selected restaurant is ${restaurant.name}`;
+  att1.value = `${restaurant.cuisine_type} food, click to see address and hours`;
   a.innerHTML = restaurant.name;
   li.setAttributeNode(att1);
 };
-
 
 /**
  * Get a parameter by name from page URL.

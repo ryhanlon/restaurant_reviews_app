@@ -9,7 +9,6 @@ self.addEventListener('install', event => {
 });
 
 
-
 /**
  * Activate the event. caches.keys()
  */

@@ -12,7 +12,7 @@ body {
 	background-color: #fcfcfc;
 	margin: 0;
 	position:relative;
-    width:100vw;
+    width:100%;
 }
 
 ul, li {
@@ -71,7 +71,7 @@ img, embed, object, video {
     flex-direction: column;
     background-color: rgb(119, 13, 13);
     color: #fc8800;
-    width: 100vw;
+    width: 100%;
     /*padding: .5rem;*/
 }
 
@@ -101,49 +101,6 @@ nav h1 a {
     text-transform: uppercase;
 }
 
-/*.nav-content {*/
-    /*font-size: 1rem;*/
-/*}*/
-
-
-/* ============= Breadcrumb on the reviews page,  restaurant.html =============== */
-
-
-
-/*#breadcrumb {*/
-    /*padding: .7rem;*/
-    /*list-style: none;*/
-    /*!*background-color: rgba(232, 230, 230, .7);*!*/
-    /*!*background-color: rgb(182, 127, 128);*!*/
-    /*font-size: 1.5rem;*/
-    /*margin: 0;*/
-    /*!*width: calc(50% - 80px);*!*/
-/*}*/
-
-/* Display list items side by side */
-/*#breadcrumb li {*/
-    /*display: inline;*/
-/*}*/
-
-/* Add a slash symbol (/) before/behind each list item */
-/*#breadcrumb li+li:before {*/
-    /*padding: 8px;*/
-    /*color: black;*/
-    /*content: "/\00a0";*/
-/*}*/
-
-/* Add a color to all links inside the list */
-/*#breadcrumb li a {*/
-    /*color: #0275d8;*/
-    /*text-decoration: none;*/
-/*}*/
-
-/* Add a color on mouse-over */
-/*#breadcrumb li a:hover {*/
-    /*color: #01447e;*/
-    /*text-decoration: underline;*/
-/*}*/
-
 
 /* ====================== Main Section, #maincontent ====================== */
 #maincontent {
@@ -170,6 +127,7 @@ nav h1 a {
     width: 100vw;
     background-color: #ccc;
 }
+
 
 /* ====================== Restaurant Filtering ====================== */
 #restaurant-container {
@@ -332,33 +290,6 @@ address {
     background-color: #333;
 }
 
-/*.reviews-header {*/
-    /*!*grid-area: header;*!*/
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*width: 100%;*/
-    /*z-index: 1000;*/
-/*}*/
-
-/*.reviews-pg #map-container {*/
-    /*background: blue none repeat scroll 0 0;*/
-    /*height: 87%;*/
-    /*position: fixed;*/
-    /*right: 0;*/
-    /*top: 80px;*/
-    /*width: 50%;*/
-/*}*/
-
-/*.reviews-pg #map {*/
-    /*background-color: #ccc;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-/*}*/
-
-/*.reviews-maincontent {*/
-    /*grid-area: maincontent;*/
-/*}*/
-
 #restaurant-name {
     /*color: #f18200;*/
     grid-area: rest-name;
@@ -372,6 +303,7 @@ address {
     text-transform: uppercase;
     line-height: 1.1;
 }
+
 #restaurant-img {
     grid-area: rest-img;
     justify-self: center;
@@ -390,7 +322,7 @@ address {
     padding: .7rem;
     text-align: center;
     text-transform: uppercase;
-    width: 100vw;
+    width: 96vw;
     border-bottom: 2px solid #545252;
 }
 
@@ -414,17 +346,6 @@ address {
 #reviews-container {
     /*height: 0;*/
 }
-
-/*#review-list::before {*/
-    /*!*background-color: rgba(119, 13, 13, 0.52);*!*/
-    /*!*padding: 2vh 4vh;*!*/
-    /*display: block;*/
-  /*content: " ";*/
-  /*margin-top: -400px;*/
-  /*height: 400px;*/
-  /*visibility: hidden;*/
-  /*pointer-events: none;*/
-/*}*/
 
 #reviews-container h3 {
     /*color: #f58500;*/
@@ -463,7 +384,7 @@ address {
 #reviews-list li p {
     margin: 0 0 10px;
     padding: 1vh;
-    font-size: 3vw;
+    font-size: 1rem;
 }
 
 #restaurant-hours {
@@ -514,7 +435,7 @@ footer {
     /*width: 50%;*/
 }
 
-
+/* ======= Map =======*/
 .leaflet-container a {
     color: #194f65 !important;
 }

@@ -150,7 +150,7 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    // Return object instead of string --RH
+    // RH: Return object instead of string
     // console.log(restaurant.photograph);
     return restaurant;
   }
@@ -181,4 +181,3 @@ class DBHelper {
   } */
 
 }
-

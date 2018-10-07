@@ -26,8 +26,8 @@ In a terminal, check the version of Python you have: ```python -V```. Use the fo
 
 ##### Technical Components
 - CSS Grid, Flexbox and Media Queries used to build the _responsive features_.
-- JavaScript (ECMASript 6) is used for user interactions which include:
-    - choose from three types of games to play
+- Aria roles, global attributes and semantic html used to enhance Accessibility.
+- JavaScript (ECMASript 6)
 
 - Leaflets.js, an open-source JavaScript library for mobile-friendly interactive maps. [Leaflets.js](https://leafletjs.com/)
 - Mapbox API for the map. [Mapbox](https://www.mapbox.com/)

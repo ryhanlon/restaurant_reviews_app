@@ -120,12 +120,16 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
     const row = document.createElement('tr');
 
     const day = document.createElement('td');
+    const att1 = document.createAttribute('role');
+    att1.value = 'row';
+
     day.innerHTML = key;
     row.appendChild(day);
 
     const time = document.createElement('td');
     time.innerHTML = operatingHours[key];
     row.appendChild(time);
+    row.setAttributeNode(att1);
 
     hours.appendChild(row);
   }
@@ -139,10 +143,13 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const title = document.createElement('h3');
   // Add ID attribute
   const att = document.createAttribute('id');
+  const att2 = document.createAttribute('tabindex');
   att.value = "review-list";
+  att2.value = "0";
   title.innerHTML = 'Reviews';
   container.appendChild(title);
   title.setAttributeNode(att);
+  title.setAttributeNode(att2);
 
   if (!reviews) {
     const noReviews = document.createElement('p');
@@ -162,6 +169,9 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  */
 createReviewHTML = (review) => {
   const li = document.createElement('li');
+  const att = document.createAttribute('tabindex');
+  att.value = "0";
+  li.setAttributeNode(att);
 
   const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;

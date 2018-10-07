@@ -2,7 +2,9 @@ const cacheNames = 'restReviews-static-v3';
 
 
 /**
- *  Call the install event.  Cache the HTML, CSS, JS and static files.  |  caches.open()
+ *  Call the install event.
+ *  Using .clone() to make a copy of the response and cache it.
+ *  Because of this, the items are not cached here, see the Fetch event on line 36.
  */
 self.addEventListener('install', event => {
 	console.log('SW: installed');
@@ -34,7 +36,8 @@ self.addEventListener('activate', function(event) {
 self.addEventListener('fetch', event => {
 	console.log('SW: Fetching');
     event.respondWith(
-		fetch(event.request).then(res => {
+		fetch(event.request)
+			.then(res => {
 			// Make a clone of response
 			const resClone = res.clone();
 			// Open cache
@@ -53,17 +56,18 @@ self.addEventListener('fetch', event => {
 /**
  * Custom response for response errors
  */
-self.addEventListener('fetch', function(event) {
-	event.respondWith(
-		fetch(event.request).then(function(response) {
-			if (response.status === 404) {
-				return new Response("Sorry! Hope you're not too hungry!")
-			}
-			return response;
-		}).catch(function() {
-			return new Response("Uh oh, I guess it didn't work!");
-		})
-	);
-});
+// self.addEventListener('fetch', function(event) {
+// 	event.respondWith(
+// 		fetch(event.request).then(function(response) {
+// 			if (response.status === 404) {
+// 				return new Response("Sorry! Hope you're not too hungry!")
+// 			}
+// 			return response;
+// 		}).catch(function() {
+// 			return new Response("Uh oh, I guess it didn't work!");
+// 		})
+//
+// 	);
+// });
 
 
